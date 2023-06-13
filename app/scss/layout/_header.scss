@@ -2,7 +2,8 @@
     background-color: var(--primary-bg-dark);
 }
 .header-wrapper {
-    padding: 56px 151px;
+    padding-top: 56px;
+    padding-bottom: 36px;
 
     display: flex;
     justify-content: space-between;
@@ -37,6 +38,7 @@
     border: 2px solid var(--primary-text-color-light);
     
     transition: var(--transition-property);
+    overflow: hidden;
     &::after {
         content: "";
         position: absolute;
@@ -46,7 +48,7 @@
         width: 17px;
         height: 17px;
 
-        background-image: url(../images/arrow-right.svg);
+        background-image: url(../images/header-arrow-right.svg);
         background-size: contain;
         background-repeat: no-repeat;
 
@@ -61,9 +63,17 @@
         border: 2px solid var(--accent-color);
         color: var(--accent-color);
     }
-    &:hover:after {
-        left: 125px;
+    &:active {
+        background-color: var(--accent-color);
+        color: var(--primary-text-color-light);
+        transition: all 100ms ease-in;
+    }
+    &:hover::after,
+    &:focus::after {
+        left: 130px;
         opacity: 1;
     }
+
+    
     // →
 }

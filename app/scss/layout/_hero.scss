@@ -1,0 +1,126 @@
+// =================+=========================HERO=======================================
+.hero {
+    background-color: var(--primary-bg-dark);
+    &::after {
+        content: '';
+        margin-top: 101px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+
+        max-width: 1440px;
+        height: 565px;
+
+
+        background-image: -webkit-image-set(url("../images/hero-bg@2x.avif") type("image/avif") 2x,
+                url("../images/hero-bg.avif") type("image/avif") 1x,
+                url("../images/hero-bg@2x.webp") type("image/webp") 2x,
+                url("../images/hero-bg.webp") type("image/webp") 1x,
+                url("../images/hero-bg@2x.jpg") 2x,
+                url("../images/hero-bg.jpg") 1x);
+        background-image: image-set(url("../images/hero-bg@2x.avif") type("image/avif") 2x,
+                url("../images/hero-bg.avif") type("image/avif") 1x,
+                url("../images/hero-bg@2x.webp") type("image/webp") 2x,
+                url("../images/hero-bg.webp") type("image/webp") 1x,
+                url("../images/hero-bg@2x.jpg") 2x,
+                url("../images/hero-bg.jpg") 1x);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    &__wrapper {
+        padding-top: 32px;
+        padding-right: 149px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        
+    }
+    &__title {
+        margin: 0;
+        @include font-title($fs: 50px, $lh: 67px);
+        color: var(--primary-text-color-light);
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    &__item {
+        border-bottom: 1px solid var(--primary-text-color-light);
+    }
+    &__link {
+        margin-bottom: 8px;
+
+        display: flex;
+        align-items: center;
+
+        @include font-text($lh: 21px);
+        color: var(--primary-text-color-light);
+
+        &::after {
+            content: '';
+            display: block;
+            margin-left: 66px;
+
+            width: 17px;
+            height: 17px;
+
+            background-image: url(../images/hero-arrow.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+}
+// =================+=========================HERO END=======================================
+
+// =====================================ADVANTAGE==========================================
+.advantage {
+    padding-top: 71px;
+    padding-bottom: 71px;
+    background-color: var(--primary-bg-light);
+    &__wrapper {
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 21px;
+    }
+
+    &__icon {
+        position: relative;
+
+        width: 74px;
+        height: 74px;
+
+        border-radius: 100%;
+        border: none;
+        background: rgba(255, 117, 0, 0.04);
+
+        svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 48px;
+            height: 48px;
+        }
+    }
+    &__text {
+        width: 70px;
+        
+        @include font-text($fw: 500, $fs: 16px, $lh: 21px);
+        color: #565656;
+    }
+}
+
+
+// =====================================ADVANTAGE END==========================================
