@@ -1,0 +1,16 @@
+@mixin font-title($fw: 700,$fs: 45px,$lh: 60px) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: calc($lh/$fs);
+}
+
+@mixin font-subtitle($fw: 700, $fs: 24px, $lh: 32px) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: calc($lh/$fs);
+}
+@mixin font-text($fw: 50, $fs: 16px, $lh: 28px) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: calc($lh/$fs);
+}
