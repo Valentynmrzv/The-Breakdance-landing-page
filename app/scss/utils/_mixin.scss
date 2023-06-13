@@ -9,7 +9,7 @@
     font-size: $fs;
     line-height: calc($lh/$fs);
 }
-@mixin font-text($fw: 50, $fs: 16px, $lh: 28px) {
+@mixin font-text($fw: 500, $fs: 16px, $lh: 28px) {
     font-weight: $fw;
     font-size: $fs;
     line-height: calc($lh/$fs);
