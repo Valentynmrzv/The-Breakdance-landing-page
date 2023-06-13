@@ -219,6 +219,7 @@ ul {
 }
 .hero__item {
   border-bottom: 1px solid var(--primary-text-color-light);
+  transition: var(--transition-property);
 }
 .hero__link {
   margin-bottom: 8px;
@@ -228,6 +229,7 @@ ul {
   font-size: 16px;
   line-height: 1.3125;
   color: var(--primary-text-color-light);
+  transition: var(--transition-property);
 }
 .hero__link::after {
   content: "";
@@ -238,6 +240,10 @@ ul {
   background-image: url(../images/hero-arrow.svg);
   background-size: contain;
   background-repeat: no-repeat;
+  transition: var(--transition-property);
+}
+.hero__item:hover .hero__link::after {
+  transform: translateX(-20px) rotateY(180deg);
 }
 
 .advantage {

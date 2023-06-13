@@ -49,6 +49,8 @@
     }
     &__item {
         border-bottom: 1px solid var(--primary-text-color-light);
+        transition: var(--transition-property);
+        
     }
     &__link {
         margin-bottom: 8px;
@@ -58,6 +60,7 @@
 
         @include font-text($lh: 21px);
         color: var(--primary-text-color-light);
+        transition: var(--transition-property);
 
         &::after {
             content: '';
@@ -70,9 +73,16 @@
             background-image: url(../images/hero-arrow.svg);
             background-size: contain;
             background-repeat: no-repeat;
+
+            transition: var(--transition-property);
+
+            .hero__item:hover & {
+                transform: translateX(-20px) rotateY(180deg);
+            }
         }
     }
 }
+
 // =================+=========================HERO END=======================================
 
 // =====================================ADVANTAGE==========================================
