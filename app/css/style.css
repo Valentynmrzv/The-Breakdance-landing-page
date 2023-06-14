@@ -142,6 +142,9 @@ ul {
 .navigation__item:hover .navigation__link, .navigation__item:focus .navigation__link {
   opacity: 0.4;
 }
+.navigation__link.active {
+  color: red;
+}
 
 .button {
   padding: 14px 47px;
