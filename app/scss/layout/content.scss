@@ -289,6 +289,7 @@
 
         display: grid;
         grid-template-columns: 320px 420px 320px;
+        // grid-template-columns: 8fr 10.5fr 8fr;
         grid-template-rows: repeat(2, 294px);
         grid-column-gap: 40px;
         grid-row-gap: 32px;
