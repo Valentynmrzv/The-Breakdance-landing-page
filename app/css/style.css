@@ -223,6 +223,9 @@ ul {
   border-bottom: 1px solid var(--primary-text-color-light);
   transition: var(--transition-property);
 }
+.hero__item:hover, .hero__item:focus {
+  opacity: 0.4;
+}
 .hero__link {
   margin-bottom: 8px;
   display: flex;
@@ -245,7 +248,7 @@ ul {
   transition: var(--transition-property);
 }
 .hero__item:hover .hero__link::after {
-  transform: translateX(-20px) rotateY(180deg);
+  transform: translateX(20px);
 }
 
 .advantage {
