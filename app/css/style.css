@@ -544,7 +544,7 @@ ul {
   position: relative;
   padding-left: 152px;
   padding-top: 150px;
-  padding-bottom: 150px;
+  padding-bottom: 146px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -609,4 +609,135 @@ ul {
   border: 1px solid var(--primary-bg-light);
   color: var(--title-text-color-light);
   opacity: 0.3;
+}
+
+.reviews {
+  background-color: var(--primary-bg-light);
+}
+.reviews__wrapper {
+  position: relative;
+  padding-top: 220px;
+  padding-bottom: 105px;
+}
+.reviews__title {
+  width: 349px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.34375;
+  color: var(--title-text-color-dark);
+}
+
+.star-list {
+  margin-top: 28px;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  width: 208px;
+}
+.star-list::after {
+  content: "Excellent 5000+reviews";
+  margin-top: 8px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.6111111111;
+  color: var(--primary-text-color-dark);
+  opacity: 0.6;
+}
+.star-list .icon {
+  display: block;
+  width: 22px;
+  height: 22px;
+}
+
+.reviews-user {
+  margin-top: 80px;
+}
+.reviews-user::after {
+  content: "Peoples successsfully got this dream place";
+  display: block;
+  margin-top: 21px;
+  width: 261px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.6111111111;
+  color: var(--primary-text-color-dark);
+  opacity: 0.6;
+}
+.reviews-user__list {
+  position: relative;
+  height: 57px;
+}
+.reviews-user__list .item {
+  position: absolute;
+  width: 57px;
+  height: 57px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.reviews-user__list .item.first {
+  left: 0px;
+}
+.reviews-user__list .item.second {
+  left: 42px;
+}
+.reviews-user__list .item.third {
+  left: 84px;
+}
+.reviews-user__list .item.fourth {
+  left: 126px;
+}
+.reviews-user__list .item.fifth {
+  left: 168px;
+}
+
+.card {
+  position: absolute;
+  bottom: 240px;
+  right: 125px;
+}
+.card__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: 718px;
+}
+.card__item {
+  display: block;
+  padding: 41px 20px 42px 26px;
+  width: calc((100% - 40px) / 2);
+  background-color: var(--primary-bg-light);
+}
+.card__item:first-child {
+  box-shadow: -14px 24px 68px -16px rgba(0, 0, 0, 0.12);
+}
+.card .img {
+  display: block;
+  width: 56px;
+  height: 56px;
+}
+.card .title {
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.1818181818;
+  color: var(--title-text-color-dark);
+}
+.card .text {
+  margin-top: 14px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.6428571429;
+  color: var(--primary-text-color-dark);
+  opacity: 0.3;
+}
+
+.footer {
+  background-color: var(--primary-bg-dark);
+}
+.footer__wrapper {
+  padding-top: 59px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
