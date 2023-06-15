@@ -53,7 +53,7 @@
                     </li>
                 </ul>
             </nav>
-            <button class="button">Book Now</button>
+            <button class="button" data-modal-open>Book Now</button>
         </div>
 
     </header>
@@ -870,6 +870,84 @@
     </section>
 
 </footer>
+
+    <!-- ==================MODAL============================================ -->
+
+<div class="backdrop is-hidden" data-modal>
+
+    <a href="#" class="backdrop-close" data-modal-close-link></a>
+
+    <div class="modal">
+
+        <button class="modal__button main-button" data-modal-close>
+
+            <svg class="modal__icon">
+
+                <use href="./images/sprite.svg#icon-close"></use>
+
+            </svg>
+
+        </button>
+
+        <div class="contact-form">
+
+            <form class="modal-form">
+
+                <b>Leave your details,<br> we will <span>call you back</span></b>
+
+                <label for="user_name" class="contact-form__label">
+
+                    Name
+
+                    <span class="contact-form__wrapper">
+
+                        <input type="text" name="firstName" class="contact-form__input" id="user_name" autofocus
+
+                            required minlength="4">
+
+                        <svg class="modal-form__icon">
+
+                            <use href="./images/sprite.svg#icon-user"></use>
+
+                        </svg>
+
+                    </span>
+
+                </label>
+
+                <label for="user_phone" class="contact-form__label">
+
+                    Phone
+
+                    <span class="contact-form__wrapper">
+
+                        <input type="tel" name="phone" class="contact-form__input" id="user_phone" required
+
+                            pattern="[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" title="999 123 45 67"
+
+                            placeholder="999 123 45 67">
+
+                        <svg class="modal-form__icon" width="12" height="12">
+
+                            <use href="./images/sprite.svg#icon-phone"></use>
+
+                        </svg>
+
+                    </span>
+
+                </label>
+
+                <button type="submit" class="button-form main-button">Send</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <!-- ==============================  MODAL END ============================ -->
 
 
 
