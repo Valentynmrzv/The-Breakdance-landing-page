@@ -43,7 +43,7 @@ function images(){
         .pipe(avif({ quality: 80}))
         
         .pipe(src('app/images/src/*.*'))
-        .pipe(newer('app/images/docs'))
+        .pipe(newer('app/images/dist'))
         .pipe(webp())
         
         .pipe(src('app/images/src/*.*'))
@@ -106,8 +106,8 @@ function watching() {
     watch(['app/*.html']).on('change', browserSync.reload)
 }
 
-function cleanDocs() {
-    return src('docs')
+function cleanDist() {
+    return src('dist')
     .pipe(clean())
 }
 
@@ -122,7 +122,7 @@ function building() {
         'app/js/main.min.js',
         'app/*.html'
     ], { base: 'app' })
-    .pipe(dest('docs'))
+    .pipe(dest('dist'))
 }
 
 exports.styles = styles;
@@ -134,6 +134,6 @@ exports.sprite = sprite;
 exports.scripts = scripts;
 exports.watching = watching;
 
-exports.build = series(cleanDocs, building);
+exports.build = series(cleanDist, building);
 
 exports.default = parallel(styles, scripts, pages, watching);
