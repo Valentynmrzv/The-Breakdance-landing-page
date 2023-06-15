@@ -19,7 +19,7 @@
 
         text-align: center;
         @include font-title($fw: 700, $fs: 45px, $lh: 60px);
-        columns: var(--title-text-color-dark);
+        color: var(--title-text-color-dark);
 
         span {
             color: var(--accent-color);
