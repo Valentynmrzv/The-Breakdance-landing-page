@@ -19,4 +19,11 @@
         background-size: contain;
         background-repeat: no-repeat;
     }
+
+    &.contact {
+        color: var(--title-text-color-black);
+        &::after {
+            background-image: url(../images/logo-dark.svg);
+        }
+    }
 }

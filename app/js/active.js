@@ -14,8 +14,8 @@ function addUnderlineToCurrentPage() {
 
     // Проверяем, соответствует ли название файла текущему файлу
     if (linkFileName === currentFileName) {
-      // Добавляем стиль с подчеркиванием
-      link.style.textDecoration = 'underline';
+      // Добавляем класс "active"
+      link.classList.add('current-page');
     }
   }
 }

@@ -24,10 +24,20 @@
         .navigation__item:hover &,
         .navigation__item:focus & {
             opacity: 0.4;
+
         }
 
-        &.active {
-            color: red;
+        &.current-page {
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: -10px;
+                left: 0;
+                width: 100%;
+
+                border: 2px solid var(--primary-bg-light);
+            }
         }
     }
 }

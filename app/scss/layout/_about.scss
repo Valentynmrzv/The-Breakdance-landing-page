@@ -71,24 +71,9 @@
         width: 156px;
         height: 54px;
 
-        background-color: var(--accent-color);
         border-radius: 27px;
-        border: 1px solid var(--accent-color);
 
         @include font-text($fs: 16px, $lh: 26px);
-        color: var(--primary-text-color-light);
-        transition: var(--transition-property);
-
-        &:hover,
-        &:focus {
-            background-color: var(--primary-bg-dark);
-            color: var(--accent-color);
-        }
-        &:active {
-            border: 1px solid var(--primary-bg-light);
-            color: var(--title-text-color-light);
-            opacity: 0.3;
-        }
     }
 }
 // ============================ABOUT END===========================================
