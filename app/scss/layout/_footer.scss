@@ -4,6 +4,8 @@
     &__wrapper {
         display: flex;
         justify-content: space-between;
+        padding-bottom: 50px;
+        border-bottom: 1px solid var(--primary-bg-light);
     }
 }
 .footer-nav {
@@ -96,3 +98,65 @@
     }
 }
 
+// ==================================================Copywrite============================================================================
+.copywrite {
+    &__wrapper {
+        position: relative;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__title {
+        position: absolute;
+
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+
+        @include font-text;
+        color: var(--primary-text-color-light);
+    
+        .link {
+            display: flex;
+            @include font-text;
+            color: var(--primary-text-color-light);
+            transition: var(--transition-property);
+
+            &:hover,
+            &:focus {
+                opacity: 0.4;
+            }
+            .link-accent {
+                font-style: normal;
+            }
+
+            // .link-accent {
+            //     display: block;
+            //     font-style: normal;
+            //     @include font-text;
+            //     color: var(--primary-text-color-light);
+            //     transition: var(--transition-property);
+            // }
+            // &:hover {
+            //     -webkit-background-clip: text;
+            //     background-clip: text;
+            //     -webkit-text-fill-color: transparent;
+            //     transform: scale(0.9);
+            //     transition: var(--transition-property);
+
+            //     & .link-accent {
+            //         color: transparent;
+            //         background: linear-gradient(152deg, rgba(255, 107, 0, 1) 14%, rgba(235, 222, 215, 1) 46%, rgba(255, 107, 0, 1) 78%);
+            //         background: -webkit-linear-gradient(152deg, rgba(255, 107, 0, 1) 14%, rgba(235, 222, 215, 1) 46%, rgba(255, 107, 0, 1) 78%);
+            //         background-clip: text;
+            //         -webkit-background-clip: text;
+            //         transition: var(--transition-property);
+
+            //     }
+            // }
+        }
+    }
+}

@@ -17,6 +17,12 @@
     &__item {
         @include font-text;
         color: var(--title-text-color-dark);
+
+        &:first-child {
+            padding: 10px 20px;
+            border: 1px solid var(--primary-bg-dark);
+            border-radius: 8px;
+        }
     }
     &__link {
         @include font-text;
