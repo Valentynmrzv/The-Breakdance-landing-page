@@ -14,7 +14,7 @@ function addUnderlineToCurrentPage() {
 
     // Проверяем, соответствует ли название файла текущему файлу
     if (linkFileName === currentFileName) {
-      // Добавляем класс "active"
+      // Добавляем класс "current-page"
       link.classList.add('current-page');
     }
   }
