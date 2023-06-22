@@ -50,11 +50,12 @@
     &__input {
         width: 100%;
         height: 60px;
-        padding-left: 42px;
+        padding-left: 55px;
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
         transition: border-color 250ms linear;
         cursor: pointer;
+        background-color: transparent;
 
         &::placeholder {
             color: var(--primary-text-color-dark);
@@ -64,6 +65,7 @@
         &:focus {
             outline: none;
             border-color: var(--accent-color);
+            background-color: var(--primary-bg-light);
         }
 
         &:focus+.modal-form__icon {
@@ -79,7 +81,7 @@
     margin-top: 31px;
 
     width: 250px;
-    height: 90px;
+    height: 60px;
     align-self: center;
     cursor: pointer;
     border-radius: 10px;
