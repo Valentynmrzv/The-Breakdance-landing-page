@@ -8,14 +8,7 @@ let myImageSliderRew = new Swiper('.swiper-img', {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev'
 	},
-
-	simulateTouch: true,
-	// Чувствительность свайпа
-	touchRatio: 1,
-	// Угол срабатывания свайпа/перетаскивания
-	touchAngle: 45,
-	// Курсор перетаскивания
-	grabCursor: true,
+	simulateTouch: false,
 	spaceBetween: 0,
 	centeredSlides: false,
 	loop: true,
@@ -30,4 +23,17 @@ let myImageSliderRew = new Swiper('.swiper-img', {
     loadOnTransitionStart: false,
     loadPrevNext: true,
 
+});
+
+let myImageSliderRewFirst = new Swiper('.first', {
+	  navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev'
+	},
+	loop: true,
+	autoplay: {
+		delay: 5000,
+		stopOnLastSlide: true,
+		disableOnInteraction: true
+	},
 });
