@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Breakdance</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
         integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
         crossorigin="anonymous">
@@ -73,15 +74,75 @@
 
             <li class="order__item large">
 
-                <picture class="img">
+                <div class="swiper-img swiper-container">
 
-                    <source srcset="./images/room-2.avif 1x, ./images/room-2@2x.avif 2x" type="image/avif">
+                    <ul class="list swiper-wrapper">
 
-                    <source srcset="./images/room-2.webp 1x, ./images/room-2@2x.webp 2x" type="image/webp">
+                        <li class="list__item swiper-slide">
 
-                    <img srcset="./images/room-2.jpg 1x, ./images/room-2@2x.jpg 2x" src="./images/room-2.jpg" alt="Luxury Room">
+                            <picture class="img swiper-lazy">
 
-                </picture>
+                                <source srcset="./images/room-2.avif 1x, ./images/room-2@2x.avif 2x" type="image/avif">
+
+                                <source srcset="./images/room-2.webp 1x, ./images/room-2@2x.webp 2x" type="image/webp">
+
+                                <img srcset="./images/room-2.jpg 1x, ./images/room-2@2x.jpg 2x" src="./images/room-2.jpg" alt="Luxury Room">
+
+                            </picture>
+
+                        </li>
+
+                        <li class="list__item swiper-slide">
+
+                            <picture class="img swiper-lazy">
+
+                                <source srcset="./images/room-2-1.avif 1x, ./images/room-2-1@2x.avif 2x" type="image/avif">
+
+                                <source srcset="./images/room-2-1.webp 1x, ./images/room-2-1@2x.webp 2x" type="image/webp">
+
+                                <img srcset="./images/room-2-1.jpg 1x, ./images/room-2-1@2x.jpg 2x" src="./images/room-2-1.jpg" alt="Luxury Room">
+
+                            </picture>
+
+                        </li>
+
+                        <li class="list__item swiper-slide">
+
+                            <picture class="img swiper-lazy">
+
+                                <source srcset="./images/room-2-2.avif 1x, ./images/room-2-2@2x.avif 2x" type="image/avif">
+
+                                <source srcset="./images/room-2-2.webp 1x, ./images/room-2-2@2x.webp 2x" type="image/webp">
+
+                                <img srcset="./images/room-2-2.jpg 1x, ./images/room-2@2x.jpg 2x" src="./images/room-2-2.jpg" alt="Luxury Room">
+
+                            </picture>
+
+                        </li>
+
+                        <li class="list__item swiper-slide">
+
+                            <picture class="img swiper-lazy">
+
+                                <source srcset="./images/room-2-3.avif 1x, ./images/room-2-3@2x.avif 2x" type="image/avif">
+
+                                <source srcset="./images/room-2-3.webp 1x, ./images/room-2-3@2x.webp 2x" type="image/webp">
+
+                                <img srcset="./images/room-2-3.jpg 1x, ./images/room-3@2x.jpg 2x" src="./images/room-2-3.jpg"
+
+                                    alt="Luxury Room">
+
+                            </picture>
+
+                        </li>
+
+                    </ul>
+
+                    <button class="swiper-button-prev"></button>
+
+                    <button class="swiper-button-next"></button>
+
+                </div>
 
                 <div class="order__inner">
 
@@ -93,23 +154,99 @@
 
                         assumenda quisquam necessitatibus. Vitae, ducimus labore.</p>
 
+                    <button class="button main-button">Order</button>
+
                 </div>
 
             </li>
 
             <li class="order__item">
 
-                <picture class="img">
+                <div class="swiper-img swiper-container">
 
-                    <source srcset="./images/room-1.avif 1x, ./images/room-1@2x.avif 2x" type="image/avif">
+                    <ul class="list swiper-wrapper">
 
-                    <source srcset="./images/room-1.webp 1x, ./images/room-1@2x.webp 2x" type="image/webp">
+                        <li class="list__item swiper-slide">
 
-                    <img srcset="./images/room-1.jpg 1x, ./images/room-1@2x.jpg 2x" src="./images/room-1.jpg"
+                            <picture class="img swiper-lazy">
 
-                        alt="Room with View">
+                                <source srcset="./images/room-1.avif 1x, ./images/room-1@2x.avif 2x" type="image/avif">
 
-                </picture>
+                                <source srcset="./images/room-1.webp 1x, ./images/room-1@2x.webp 2x" type="image/webp">
+
+                                <img srcset="./images/room-1.jpg 1x, ./images/room-1@2x.jpg 2x" src="./images/room-1.jpg" alt="Room with View">
+
+                            </picture>
+
+                        </li>
+
+                        <li class="list__item swiper-slide">
+
+                        <picture class="img swiper-lazy">
+
+                            <source srcset="./images/room-1-1.avif 1x, ./images/room-1-1@2x.avif 2x" type="image/avif">
+
+                            <source srcset="./images/room-1-1.webp 1x, ./images/room-1-1@2x.webp 2x" type="image/webp">
+
+                            <img srcset="./images/room-1-1.jpg 1x, ./images/room-1-1@2x.jpg 2x" src="./images/room-1-1.jpg" alt="Room with View">
+
+                        </picture>
+
+                            </picture>
+
+                        </li>
+
+                        <li class="list__item swiper-slide">
+
+                        <picture class="img swiper-lazy">
+
+                            <source srcset="./images/room-1-2.avif 1x, ./images/room-1-2@2x.avif 2x" type="image/avif">
+
+                            <source srcset="./images/room-1-2.webp 1x, ./images/room-1-2@2x.webp 2x" type="image/webp">
+
+                            <img srcset="./images/room-1-2.jpg 1x, ./images/room-1-2@2x.jpg 2x" src="./images/room-1-2.jpg" alt="Room with View">
+
+                        </picture>
+
+                        </li>
+
+                        <li class="list__item swiper-slide">
+
+                            <picture class="img swiper-lazy">
+
+                                <source srcset="./images/room-1-3.avif 1x, ./images/room-1-3@2x.avif 2x" type="image/avif">
+
+                                <source srcset="./images/room-1-3.webp 1x, ./images/room-1-3@2x.webp 2x" type="image/webp">
+
+                                <img srcset="./images/room-1-3.jpg 1x, ./images/room-1-3@2x.jpg 2x" src="./images/room-1-3.jpg" alt="Room with View">
+
+                            </picture>
+
+                        </li>
+
+                        <li class="list__item swiper-slide">
+
+                            <picture class="img swiper-lazy">
+
+                                <source srcset="./images/room-1-4.avif 1x, ./images/room-1-4@2x.avif 2x" type="image/avif">
+
+                                <source srcset="./images/room-1-4.webp 1x, ./images/room-1-4@2x.webp 2x" type="image/webp">
+
+                                <img srcset="./images/room-1-4.jpg 1x, ./images/room-1-4@2x.jpg 2x" src="./images/room-1-4.jpg"
+
+                                    alt="Room with View">
+
+                            </picture>
+
+                        </li>
+
+                    </ul>
+
+                    <button class="swiper-button-prev"></button>
+
+                    <button class="swiper-button-next"></button>
+
+                </div>
 
                 <div class="order__inner">
 
@@ -121,25 +258,107 @@
 
                         assumenda quisquam necessitatibus. Vitae, ducimus labore.</p>
 
+                    <button class="button main-button">Order</button>
+
                 </div>
 
             </li>
 
-        
-
             <li class="order__item">
 
-                <picture class="img">
+                <div class="swiper-img swiper-container">
 
-                    <source srcset="./images/room-3.avif 1x, ./images/room-3@2x.avif 2x" type="image/avif">
+                    <ul class="list swiper-wrapper">
 
-                    <source srcset="./images/room-3.webp 1x, ./images/room-3@2x.webp 2x" type="image/webp">
+                        <li class="list__item swiper-slide">
 
-                    <img srcset="./images/room-3.jpg 1x, ./images/room-3@2x.jpg 2x" src="./images/room-3.jpg"
+                            <picture class="img swiper-lazy">
 
-                        alt="Appartment">
+                                <source srcset="./images/room-3.avif 1x, ./images/room-3@2x.avif 2x" type="image/avif">
 
-                </picture>
+                                <source srcset="./images/room-3.webp 1x, ./images/room-3@2x.webp 2x" type="image/webp">
+
+                                <img srcset="./images/room-3.jpg 1x, ./images/room-3@2x.jpg 2x" src="./images/room-3.jpg"
+
+                                    alt="Room with View">
+
+                            </picture>
+
+                        </li>
+
+                        <li class="list__item swiper-slide">
+
+                            <picture class="img swiper-lazy">
+
+                                <source srcset="./images/room-3-1.avif 1x, ./images/room-3-1@2x.avif 2x" type="image/avif">
+
+                                <source srcset="./images/room-3-1.webp 1x, ./images/room-3-1@2x.webp 2x" type="image/webp">
+
+                                <img srcset="./images/room-3-1.jpg 1x, ./images/room-3-1@2x.jpg 2x" src="./images/room-3-1.jpg"
+
+                                    alt="Room with View">
+
+                            </picture>
+
+                            </picture>
+
+                        </li>
+
+                        <li class="list__item swiper-slide">
+
+                            <picture class="img swiper-lazy">
+
+                                <source srcset="./images/room-3-2.avif 1x, ./images/room-3-2@2x.avif 2x" type="image/avif">
+
+                                <source srcset="./images/room-3-2.webp 1x, ./images/room-3-2@2x.webp 2x" type="image/webp">
+
+                                <img srcset="./images/room-3-2.jpg 1x, ./images/room-3-2@2x.jpg 2x" src="./images/room-3-2.jpg"
+
+                                    alt="Room with View">
+
+                            </picture>
+
+                        </li>
+
+                        <li class="list__item swiper-slide">
+
+                            <picture class="img swiper-lazy">
+
+                                <source srcset="./images/room-3-3.avif 1x, ./images/room-3-3@2x.avif 2x" type="image/avif">
+
+                                <source srcset="./images/room-3-3.webp 1x, ./images/room-3-3@2x.webp 2x" type="image/webp">
+
+                                <img srcset="./images/room-3-3.jpg 1x, ./images/room-3-3@2x.jpg 2x" src="./images/room-3-3.jpg"
+
+                                    alt="Room with View">
+
+                            </picture>
+
+                        </li>
+
+                        <li class="list__item swiper-slide">
+
+                            <picture class="img swiper-lazy">
+
+                                <source srcset="./images/room-3-4.avif 1x, ./images/room-3-4@2x.avif 2x" type="image/avif">
+
+                                <source srcset="./images/room-3-4.webp 1x, ./images/room-3-4@2x.webp 2x" type="image/webp">
+
+                                <img srcset="./images/room-3-4.jpg 1x, ./images/room-3-4@2x.jpg 2x" src="./images/room-3-4.jpg"
+
+                                    alt="Room with View">
+
+                            </picture>
+
+                        </li>
+
+                    </ul>
+
+                    <button class="swiper-button-prev"></button>
+
+                    <button class="swiper-button-next"></button>
+
+                </div>
 
                 <div class="order__inner">
 
@@ -151,21 +370,89 @@
 
                         assumenda quisquam necessitatibus. Vitae, ducimus labore.</p>
 
+                    <button class="button main-button">Order</button>
+
                 </div>
 
             </li>
 
             <li class="order__item large">
 
-                <picture class="img">
+                <div class="swiper-img swiper-container">
 
-                    <source srcset="./images/room-2.avif 1x, ./images/room-2@2x.avif 2x" type="image/avif">
+                    <ul class="list swiper-wrapper">
 
-                    <source srcset="./images/room-2.webp 1x, ./images/room-2@2x.webp 2x" type="image/webp">
+                        <li class="list__item swiper-slide">
 
-                    <img srcset="./images/room-2.jpg 1x, ./images/room-2@2x.jpg 2x" src="./images/room-2.jpg" alt="Luxury Room">
+                            <picture class="img swiper-lazy">
 
-                </picture>
+                                <source srcset="./images/room-2.avif 1x, ./images/room-2@2x.avif 2x" type="image/avif">
+
+                                <source srcset="./images/room-2.webp 1x, ./images/room-2@2x.webp 2x" type="image/webp">
+
+                                <img srcset="./images/room-2.jpg 1x, ./images/room-2@2x.jpg 2x" src="./images/room-2.jpg"
+
+                                    alt="Luxury Room">
+
+                            </picture>
+
+                        </li>
+
+                        <li class="list__item swiper-slide">
+
+                            <picture class="img swiper-lazy">
+
+                                <source srcset="./images/room-2-1.avif 1x, ./images/room-2-1@2x.avif 2x" type="image/avif">
+
+                                <source srcset="./images/room-2-1.webp 1x, ./images/room-2-1@2x.webp 2x" type="image/webp">
+
+                                <img srcset="./images/room-2-1.jpg 1x, ./images/room-2-1@2x.jpg 2x" src="./images/room-2-1.jpg"
+
+                                    alt="Luxury Room">
+
+                            </picture>
+
+                        </li>
+
+                        <li class="list__item swiper-slide">
+
+                            <picture class="img swiper-lazy">
+
+                                <source srcset="./images/room-2-2.avif 1x, ./images/room-2-2@2x.avif 2x" type="image/avif">
+
+                                <source srcset="./images/room-2-2.webp 1x, ./images/room-2-2@2x.webp 2x" type="image/webp">
+
+                                <img srcset="./images/room-2-2.jpg 1x, ./images/room-2@2x.jpg 2x" src="./images/room-2-2.jpg"
+
+                                    alt="Luxury Room">
+
+                            </picture>
+
+                        </li>
+
+                        <li class="list__item swiper-slide">
+
+                            <picture class="img swiper-lazy">
+
+                                <source srcset="./images/room-2-3.avif 1x, ./images/room-2-3@2x.avif 2x" type="image/avif">
+
+                                <source srcset="./images/room-2-3.webp 1x, ./images/room-2-3@2x.webp 2x" type="image/webp">
+
+                                <img srcset="./images/room-2-3.jpg 1x, ./images/room-3@2x.jpg 2x" src="./images/room-2-3.jpg"
+
+                                    alt="Luxury Room">
+
+                            </picture>
+
+                        </li>
+
+                    </ul>
+
+                    <button class="swiper-button-prev"></button>
+
+                    <button class="swiper-button-next"></button>
+
+                </div>
 
                 <div class="order__inner">
 
@@ -177,23 +464,91 @@
 
                         assumenda quisquam necessitatibus. Vitae, ducimus labore.</p>
 
+                    <button class="button main-button">Order</button>
+
                 </div>
 
             </li>
 
             <li class="order__item">
 
-                <picture class="img">
+                <div class="swiper-img swiper-container">
 
-                    <source srcset="./images/room-4.avif 1x, ./images/room-4@2x.avif 2x" type="image/avif">
+                    <ul class="list swiper-wrapper">
 
-                    <source srcset="./images/room-4.webp 1x, ./images/room-4@2x.webp 2x" type="image/webp">
+                        <li class="list__item swiper-slide">
 
-                    <img srcset="./images/room-4.jpg 1x, ./images/room-4@2x.jpg 2x" src="./images/room-4.jpg"
+                            <picture class="img swiper-lazy">
 
-                        alt="Small Room">
+                                <source srcset="./images/room-4.avif 1x, ./images/room-4@2x.avif 2x" type="image/avif">
 
-                </picture>
+                                <source srcset="./images/room-4.webp 1x, ./images/room-4@2x.webp 2x" type="image/webp">
+
+                                <img srcset="./images/room-4.jpg 1x, ./images/room-4@2x.jpg 2x" src="./images/room-4.jpg"
+
+                                    alt="Room with View">
+
+                            </picture>
+
+                        </li>
+
+                        <li class="list__item swiper-slide">
+
+                            <picture class="img swiper-lazy">
+
+                                <source srcset="./images/room-4-1.avif 1x, ./images/room-4-1@2x.avif 2x" type="image/avif">
+
+                                <source srcset="./images/room-4-1.webp 1x, ./images/room-4-1@2x.webp 2x" type="image/webp">
+
+                                <img srcset="./images/room-4-1.jpg 1x, ./images/room-4-1@2x.jpg 2x" src="./images/room-4-1.jpg"
+
+                                    alt="Room with View">
+
+                            </picture>
+
+                            </picture>
+
+                        </li>
+
+                        <li class="list__item swiper-slide">
+
+                            <picture class="img swiper-lazy">
+
+                                <source srcset="./images/room-4-2.avif 1x, ./images/room-4-2@2x.avif 2x" type="image/avif">
+
+                                <source srcset="./images/room-4-2.webp 1x, ./images/room-4-2@2x.webp 2x" type="image/webp">
+
+                                <img srcset="./images/room-4-2.jpg 1x, ./images/room-4-2@2x.jpg 2x" src="./images/room-4-2.jpg"
+
+                                    alt="Room with View">
+
+                            </picture>
+
+                        </li>
+
+                        <li class="list__item swiper-slide">
+
+                            <picture class="img swiper-lazy">
+
+                                <source srcset="./images/room-4-3.avif 1x, ./images/room-4-3@2x.avif 2x" type="image/avif">
+
+                                <source srcset="./images/room-4-3.webp 1x, ./images/room-4-3@2x.webp 2x" type="image/webp">
+
+                                <img srcset="./images/room-4-3.jpg 1x, ./images/room-4-3@2x.jpg 2x" src="./images/room-4-3.jpg"
+
+                                    alt="Room with View">
+
+                            </picture>
+
+                        </li>
+
+                    </ul>
+
+                    <button class="swiper-button-prev"></button>
+
+                    <button class="swiper-button-next"></button>
+
+                </div>
 
                 <div class="order__inner">
 
@@ -205,23 +560,91 @@
 
                         assumenda quisquam necessitatibus. Vitae, ducimus labore.</p>
 
+                    <button class="button main-button">Order</button>
+
                 </div>
 
             </li>
 
             <li class="order__item">
 
-                <picture class="img">
+                <div class="swiper-img swiper-container">
 
-                    <source srcset="./images/room-5.avif 1x, ./images/room-5@2x.avif 2x" type="image/avif">
+                    <ul class="list swiper-wrapper">
 
-                    <source srcset="./images/room-5.webp 1x, ./images/room-5@2x.webp 2x" type="image/webp">
+                        <li class="list__item swiper-slide">
 
-                    <img srcset="./images/room-5.jpg 1x, ./images/room-5@2x.jpg 2x" src="./images/room-5.jpg"
+                            <picture class="img swiper-lazy">
 
-                        alt="Medium Room">
+                                <source srcset="./images/room-5.avif 1x, ./images/room-5@2x.avif 2x" type="image/avif">
 
-                </picture>
+                                <source srcset="./images/room-5.webp 1x, ./images/room-5@2x.webp 2x" type="image/webp">
+
+                                <img srcset="./images/room-5.jpg 1x, ./images/room-5@2x.jpg 2x" src="./images/room-5.jpg"
+
+                                    alt="Room with View">
+
+                            </picture>
+
+                        </li>
+
+                        <li class="list__item swiper-slide">
+
+                            <picture class="img swiper-lazy">
+
+                                <source srcset="./images/room-5-1.avif 1x, ./images/room-5-1@2x.avif 2x" type="image/avif">
+
+                                <source srcset="./images/room-5-1.webp 1x, ./images/room-5-1@2x.webp 2x" type="image/webp">
+
+                                <img srcset="./images/room-5-1.jpg 1x, ./images/room-5-1@2x.jpg 2x" src="./images/room-5-1.jpg"
+
+                                    alt="Room with View">
+
+                            </picture>
+
+                            </picture>
+
+                        </li>
+
+                        <li class="list__item swiper-slide">
+
+                            <picture class="img swiper-lazy">
+
+                                <source srcset="./images/room-5-2.avif 1x, ./images/room-5-2@2x.avif 2x" type="image/avif">
+
+                                <source srcset="./images/room-5-2.webp 1x, ./images/room-5-2@2x.webp 2x" type="image/webp">
+
+                                <img srcset="./images/room-5-2.jpg 1x, ./images/room-5-2@2x.jpg 2x" src="./images/room-5-2.jpg"
+
+                                    alt="Room with View">
+
+                            </picture>
+
+                        </li>
+
+                        <li class="list__item swiper-slide">
+
+                            <picture class="img swiper-lazy">
+
+                                <source srcset="./images/room-5-3.avif 1x, ./images/room-5-3@2x.avif 2x" type="image/avif">
+
+                                <source srcset="./images/room-5-3.webp 1x, ./images/room-5-3@2x.webp 2x" type="image/webp">
+
+                                <img srcset="./images/room-5-3.jpg 1x, ./images/room-5-3@2x.jpg 2x" src="./images/room-5-3.jpg"
+
+                                    alt="Room with View">
+
+                            </picture>
+
+                        </li>
+
+                    </ul>
+
+                    <button class="swiper-button-prev"></button>
+
+                    <button class="swiper-button-next"></button>
+
+                </div>
 
                 <div class="order__inner">
 
@@ -233,21 +656,89 @@
 
                         assumenda quisquam necessitatibus. Vitae, ducimus labore.</p>
 
+                        <button class="button main-button">Order</button>
+
                 </div>
 
             </li>
 
             <li class="order__item large">
 
-                <picture class="img">
+                <div class="swiper-img swiper-container">
 
-                    <source srcset="./images/room-2.avif 1x, ./images/room-2@2x.avif 2x" type="image/avif">
+                    <ul class="list swiper-wrapper">
 
-                    <source srcset="./images/room-2.webp 1x, ./images/room-2@2x.webp 2x" type="image/webp">
+                        <li class="list__item swiper-slide">
 
-                    <img srcset="./images/room-2.jpg 1x, ./images/room-2@2x.jpg 2x" src="./images/room-2.jpg" alt="Luxury Room">
+                            <picture class="img swiper-lazy">
 
-                </picture>
+                                <source srcset="./images/room-2.avif 1x, ./images/room-2@2x.avif 2x" type="image/avif">
+
+                                <source srcset="./images/room-2.webp 1x, ./images/room-2@2x.webp 2x" type="image/webp">
+
+                                <img srcset="./images/room-2.jpg 1x, ./images/room-2@2x.jpg 2x" src="./images/room-2.jpg"
+
+                                    alt="Luxury Room">
+
+                            </picture>
+
+                        </li>
+
+                        <li class="list__item swiper-slide">
+
+                            <picture class="img swiper-lazy">
+
+                                <source srcset="./images/room-2-1.avif 1x, ./images/room-2-1@2x.avif 2x" type="image/avif">
+
+                                <source srcset="./images/room-2-1.webp 1x, ./images/room-2-1@2x.webp 2x" type="image/webp">
+
+                                <img srcset="./images/room-2-1.jpg 1x, ./images/room-2-1@2x.jpg 2x" src="./images/room-2-1.jpg"
+
+                                    alt="Luxury Room">
+
+                            </picture>
+
+                        </li>
+
+                        <li class="list__item swiper-slide">
+
+                            <picture class="img swiper-lazy">
+
+                                <source srcset="./images/room-2-2.avif 1x, ./images/room-2-2@2x.avif 2x" type="image/avif">
+
+                                <source srcset="./images/room-2-2.webp 1x, ./images/room-2-2@2x.webp 2x" type="image/webp">
+
+                                <img srcset="./images/room-2-2.jpg 1x, ./images/room-2@2x.jpg 2x" src="./images/room-2-2.jpg"
+
+                                    alt="Luxury Room">
+
+                            </picture>
+
+                        </li>
+
+                        <li class="list__item swiper-slide">
+
+                            <picture class="img swiper-lazy">
+
+                                <source srcset="./images/room-2-3.avif 1x, ./images/room-2-3@2x.avif 2x" type="image/avif">
+
+                                <source srcset="./images/room-2-3.webp 1x, ./images/room-2-3@2x.webp 2x" type="image/webp">
+
+                                <img srcset="./images/room-2-3.jpg 1x, ./images/room-3@2x.jpg 2x" src="./images/room-2-3.jpg"
+
+                                    alt="Luxury Room">
+
+                            </picture>
+
+                        </li>
+
+                    </ul>
+
+                    <button class="swiper-button-prev"></button>
+
+                    <button class="swiper-button-next"></button>
+
+                </div>
 
                 <div class="order__inner">
 
@@ -257,21 +748,107 @@
 
                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati labore saepe rem, est corporis assumenda quisquam necessitatibus. Vitae, ducimus labore.</p>
 
+                    <button class="button main-button">Order</button>
+
                 </div>
 
             </li>
 
             <li class="order__item">
 
-                <picture class="img">
+                <div class="swiper-img swiper-container">
 
-                    <source srcset="./images/room-1.avif 1x, ./images/room-1@2x.avif 2x" type="image/avif">
+                    <ul class="list swiper-wrapper">
 
-                    <source srcset="./images/room-1.webp 1x, ./images/room-1@2x.webp 2x" type="image/webp">
+                        <li class="list__item swiper-slide">
 
-                    <img srcset="./images/room-1.jpg 1x, ./images/room-1@2x.jpg 2x" src="./images/room-1.jpg" alt="Room with View">
+                            <picture class="img swiper-lazy">
 
-                </picture>
+                                <source srcset="./images/room-1.avif 1x, ./images/room-1@2x.avif 2x" type="image/avif">
+
+                                <source srcset="./images/room-1.webp 1x, ./images/room-1@2x.webp 2x" type="image/webp">
+
+                                <img srcset="./images/room-1.jpg 1x, ./images/room-1@2x.jpg 2x" src="./images/room-1.jpg"
+
+                                    alt="Room with View">
+
+                            </picture>
+
+                        </li>
+
+                        <li class="list__item swiper-slide">
+
+                            <picture class="img swiper-lazy">
+
+                                <source srcset="./images/room-1-1.avif 1x, ./images/room-1-1@2x.avif 2x" type="image/avif">
+
+                                <source srcset="./images/room-1-1.webp 1x, ./images/room-1-1@2x.webp 2x" type="image/webp">
+
+                                <img srcset="./images/room-1-1.jpg 1x, ./images/room-1-1@2x.jpg 2x" src="./images/room-1-1.jpg"
+
+                                    alt="Room with View">
+
+                            </picture>
+
+                            </picture>
+
+                        </li>
+
+                        <li class="list__item swiper-slide">
+
+                            <picture class="img swiper-lazy">
+
+                                <source srcset="./images/room-1-2.avif 1x, ./images/room-1-2@2x.avif 2x" type="image/avif">
+
+                                <source srcset="./images/room-1-2.webp 1x, ./images/room-1-2@2x.webp 2x" type="image/webp">
+
+                                <img srcset="./images/room-1-2.jpg 1x, ./images/room-1-2@2x.jpg 2x" src="./images/room-1-2.jpg"
+
+                                    alt="Room with View">
+
+                            </picture>
+
+                        </li>
+
+                        <li class="list__item swiper-slide">
+
+                            <picture class="img swiper-lazy">
+
+                                <source srcset="./images/room-1-3.avif 1x, ./images/room-1-3@2x.avif 2x" type="image/avif">
+
+                                <source srcset="./images/room-1-3.webp 1x, ./images/room-1-3@2x.webp 2x" type="image/webp">
+
+                                <img srcset="./images/room-1-3.jpg 1x, ./images/room-1-3@2x.jpg 2x" src="./images/room-1-3.jpg"
+
+                                    alt="Room with View">
+
+                            </picture>
+
+                        </li>
+
+                        <li class="list__item swiper-slide">
+
+                            <picture class="img swiper-lazy">
+
+                                <source srcset="./images/room-1-4.avif 1x, ./images/room-1-4@2x.avif 2x" type="image/avif">
+
+                                <source srcset="./images/room-1-4.webp 1x, ./images/room-1-4@2x.webp 2x" type="image/webp">
+
+                                <img srcset="./images/room-1-4.jpg 1x, ./images/room-1-4@2x.jpg 2x" src="./images/room-1-4.jpg"
+
+                                    alt="Room with View">
+
+                            </picture>
+
+                        </li>
+
+                    </ul>
+
+                    <button class="swiper-button-prev"></button>
+
+                    <button class="swiper-button-next"></button>
+
+                </div>
 
                 <div class="order__inner">
 
@@ -283,21 +860,107 @@
 
                         assumenda quisquam necessitatibus. Vitae, ducimus labore.</p>
 
+                    <button class="button main-button">Order</button>
+
                 </div>
 
             </li>
 
             <li class="order__item">
 
-                <picture class="img">
+                <div class="swiper-img swiper-container">
 
-                    <source srcset="./images/room-3.avif 1x, ./images/room-3@2x.avif 2x" type="image/avif">
+                    <ul class="list swiper-wrapper">
 
-                    <source srcset="./images/room-3.webp 1x, ./images/room-3@2x.webp 2x" type="image/webp">
+                        <li class="list__item swiper-slide">
 
-                    <img srcset="./images/room-3.jpg 1x, ./images/room-3@2x.jpg 2x" src="./images/room-3.jpg" alt="Appartment">
+                            <picture class="img swiper-lazy">
 
-                </picture>
+                                <source srcset="./images/room-3.avif 1x, ./images/room-3@2x.avif 2x" type="image/avif">
+
+                                <source srcset="./images/room-3.webp 1x, ./images/room-3@2x.webp 2x" type="image/webp">
+
+                                <img srcset="./images/room-3.jpg 1x, ./images/room-3@2x.jpg 2x" src="./images/room-3.jpg"
+
+                                    alt="Room with View">
+
+                            </picture>
+
+                        </li>
+
+                        <li class="list__item swiper-slide">
+
+                            <picture class="img swiper-lazy">
+
+                                <source srcset="./images/room-3-1.avif 1x, ./images/room-3-1@2x.avif 2x" type="image/avif">
+
+                                <source srcset="./images/room-3-1.webp 1x, ./images/room-3-1@2x.webp 2x" type="image/webp">
+
+                                <img srcset="./images/room-3-1.jpg 1x, ./images/room-3-1@2x.jpg 2x" src="./images/room-3-1.jpg"
+
+                                    alt="Room with View">
+
+                            </picture>
+
+                            </picture>
+
+                        </li>
+
+                        <li class="list__item swiper-slide">
+
+                            <picture class="img swiper-lazy">
+
+                                <source srcset="./images/room-3-2.avif 1x, ./images/room-3-2@2x.avif 2x" type="image/avif">
+
+                                <source srcset="./images/room-3-2.webp 1x, ./images/room-3-2@2x.webp 2x" type="image/webp">
+
+                                <img srcset="./images/room-3-2.jpg 1x, ./images/room-3-2@2x.jpg 2x" src="./images/room-3-2.jpg"
+
+                                    alt="Room with View">
+
+                            </picture>
+
+                        </li>
+
+                        <li class="list__item swiper-slide">
+
+                            <picture class="img swiper-lazy">
+
+                                <source srcset="./images/room-3-3.avif 1x, ./images/room-3-3@2x.avif 2x" type="image/avif">
+
+                                <source srcset="./images/room-3-3.webp 1x, ./images/room-3-3@2x.webp 2x" type="image/webp">
+
+                                <img srcset="./images/room-3-3.jpg 1x, ./images/room-3-3@2x.jpg 2x" src="./images/room-3-3.jpg"
+
+                                    alt="Room with View">
+
+                            </picture>
+
+                        </li>
+
+                        <li class="list__item swiper-slide">
+
+                            <picture class="img swiper-lazy">
+
+                                <source srcset="./images/room-3-4.avif 1x, ./images/room-3-4@2x.avif 2x" type="image/avif">
+
+                                <source srcset="./images/room-3-4.webp 1x, ./images/room-3-4@2x.webp 2x" type="image/webp">
+
+                                <img srcset="./images/room-3-4.jpg 1x, ./images/room-3-4@2x.jpg 2x" src="./images/room-3-4.jpg"
+
+                                    alt="Room with View">
+
+                            </picture>
+
+                        </li>
+
+                    </ul>
+
+                    <button class="swiper-button-prev"></button>
+
+                    <button class="swiper-button-next"></button>
+
+                </div>
 
                 <div class="order__inner">
 
@@ -308,6 +971,8 @@
                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati labore saepe rem, est corporis
 
                         assumenda quisquam necessitatibus. Vitae, ducimus labore.</p>
+
+                    <button class="button main-button">Order</button>
 
                 </div>
 
