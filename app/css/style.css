@@ -1235,7 +1235,7 @@ ul {
 .order__item .swiper-img .swiper-button-prev::after,
 .order__item .swiper-img .swiper-button-next::after {
   color: #fff;
-  font-size: 50px;
+  font-size: 25px;
 }
 .order__inner {
   position: absolute;
