@@ -52,6 +52,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        min-width: 0;
+        width: 320px;
+        height: 222px;
+
+        background-color: var(--primary-bg-dark);
        
         overflow: hidden;
         transition: var(--transition-property);
@@ -64,10 +69,13 @@
         &:nth-child(7) {
             grid-area: 3 / 2 / 5 / 3;
         }
+        &.large {
+            height: 474px;
+        }
         .img {
             display: block;
             width: 320px;
-            height: 100%;
+            height: calc(100% - 45px);
             // height: 300px;
             overflow: hidden;
 
@@ -75,15 +83,24 @@
                 height: 100%;
             }
         }
-        &:hover {
-            cursor: pointer;
+        .swiper-img {
+            min-width: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
 
-            .order__inner {
-                top: 0;
-                transition: all 700ms ease-in-out;
+            .swiper-button-prev,
+            .swiper-button-next {
+                background-color: transparent;
+                border: none;
+                z-index: 1;
+                &::after {
+                    color: #fff;
+                    font-size: 50px;
+                }
             }
         }
-
+        
     }
     &__inner {
         position: absolute;
@@ -93,6 +110,12 @@
         opacity: 0.9;
         top: calc(100% - 45px);
         left: 0;
+        z-index: 3;
+        cursor: pointer;
+        &:hover {
+            top: 0;
+            transition: all 700ms ease-in-out;
+        }
 
 
         .subtitle {
@@ -107,10 +130,17 @@
             text-align: center;
             @include font-text($fs: 14px, $lh: 19px);
             color: var(--primary-text-color-light);
-            &:nth-of-type(2) {
-                margin-top: 40px;
-            }
             
+            
+        }
+        .button {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 45px;
+            width: 100%;
+
+            border: none;
         }
     }
 }
